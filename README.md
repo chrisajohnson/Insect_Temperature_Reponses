@@ -124,7 +124,9 @@ To run:
 Potential issues:
 
 •	If console yields “WARNING Recovering from HTTP error [500 Internal Server Error]”, then try refreshing browser or logging into https://cds.climate.copernicus.eu/#!/home
+
 •	Remember to specify the full path to the appropriate folder on line 20
+
 •	The variables lat and lon are required to delineate the region of the world over which the climate data is extracted, while loc is simply for naming the assembled CSV files (be careful with spelling, however, because these files are used by other scripts)
 
 **4. ReadMe for “Read climate data.R”**
@@ -140,8 +142,11 @@ To run:
 4.	Run the script
 
 Potential issues:
+
 •	The script only works if the working directory (see line 11) is in the main folder of the downloaded GitHub repo
+
 •	The variable loc (line 17) must exist within “Climate station data.xlsx” and match the “Location” column exactly
+
 •	The NC files for recent and future climates must have been previously downloaded and exist within “Climate data” folder of the downloaded GitHub repo (see “ReadMe download recent climate data.docx” and “ReadMe Python download future climate data.docx”)
 
 **5. ReadMe for “Habitat temperature parameters.R”**
@@ -156,8 +161,11 @@ To run:
 3.	Run the script
 
 Potential issues:
+
 •	The script only works if the working directory (see line 9) is in the main folder of the downloaded GitHub repo
+
 •	The variable location (line 12) must exist within “Habitat temperature parameters.csv” and match the “Location” column exactly
+
 •	Some modifications to the “start” list in nls (lines 63, 66) may be needed for new populations not in “Habitat temperature parameters.csv”
 
 **6. ReadMe for “Temperature response parameters.R”**
@@ -172,9 +180,13 @@ To run:
 3.	Run the script
 
 Potential issues:
+
 •	The script only works if the working directory (see line 10) is in the main folder of the downloaded GitHub repo
+
 •	The variable species (line 13) and location (line 14) must exist within “Temperature response parameters.csv” and match the “Population” and “Location” columns exactly
+
 •	Some modifications to the “start” list of the various nls functions throughout the script may be needed for new populations not in “Temperature response parameters.csv”
+
 •	If script yields Error: “singular gradient matrix at initial parameter estimates”, it may be that a parameter value is 0 in “Temperature response parameters.csv”. In this case, ‘seed’ the parameter with a small non-zero number and try to run the script again.
 
 **7. ReadMe for “DDE population dynamics.py”**
@@ -193,9 +205,13 @@ To run:
 7.	Run the script by pressing the green ‘play’ button.
 
 Potential issues:
+
 •	Several error messages and potential solutions are listed in lines 4-13
+
 •	The variable species (line 36) and location (line 37) must exist within “Temperature response parameters.csv” and match the “Population” and “Location” columns exactly
+
 •	The script downloads the ‘jitcdde’ package from GitHub (https://github.com/neurophysik/jitcdde) if it is not installed. It may, however, be necessary to download and install the package directly.
+
 •	The script only works if the working directory (line 32) is in the main folder of the GitHub repo
 
 **8. ReadMe for “Fitness metrics and components.R”**
@@ -209,6 +225,7 @@ To run:
 2.	Run the script
 
 Potential issues:
+
 •	The script only works if the working directory (see line 9) is in the main folder of the downloaded GitHub repo
 
 **9. ReadMe for “Time series.R”**
@@ -224,8 +241,11 @@ To run:
 4.	Run the script
 
 Potential issues:
+
 •	The script only works if the working directory (see line 10) is in the main folder of the downloaded GitHub repo
+
 •	The variable species (line 19) and location (line 20) must exist within “Temperature response parameters.csv” and match the “Population” and “Location” columns exactly
+
 •	If elapsed time limit error occurs or lines are missing from the plots, try clearing the global environment and then running the script again (see line 15).
 
 **10. ReadMe for “TPC and model analyses.R”**
@@ -240,7 +260,9 @@ To run:
 3.	Run the script
 
 Potential issues:
+
 •	The script only works if the working directory (see line 10) is in the main folder of the downloaded GitHub repo
+
 •	The variable species (line 13) and location (line 14) must exist within “Temperature response parameters.csv” and match the “Population” and “Location” columns exactly
 
 **11. ReadMe for “Population dynamics analyses.R”**
@@ -255,7 +277,9 @@ To run:
 3.	Run the script
 
 Potential issues:
+
 •	The script only works if the working directory (see line 9) is in the main folder of the downloaded GitHub repo
+
 •	The variable species (line 13) and location (line 14) must exist within “Temperature response parameters.csv” and match the “Population” and “Location” columns exactly
 
 **12. ReadMe for “Statistical analyses.R”**
@@ -268,4 +292,5 @@ To run:
 1.	Simply run the script
 
 Potential issues:
+
 •	The script only works if the working directory (line 11) is in the main folder of the downloaded GitHub repo
