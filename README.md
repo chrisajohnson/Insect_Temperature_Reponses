@@ -122,6 +122,7 @@ To run:
 5.	Run the script (by pressing the green right-arrow in Spyder)
 
 Potential issues:
+
 •	If console yields “WARNING Recovering from HTTP error [500 Internal Server Error]”, then try refreshing browser or logging into https://cds.climate.copernicus.eu/#!/home
 •	Remember to specify the full path to the appropriate folder on line 20
 •	The variables lat and lon are required to delineate the region of the world over which the climate data is extracted, while loc is simply for naming the assembled CSV files (be careful with spelling, however, because these files are used by other scripts)
